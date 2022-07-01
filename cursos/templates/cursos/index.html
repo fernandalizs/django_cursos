@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'cursos/css/style.css' %}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"
+      integrity="sha384-xBXmu0dk1bEoiwd71wOonQLyH+VpgR1XcDH3rtxrLww5ajNTuMvBdL5SOiFZnNdp"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apender Django</title>
+  </head>
+  <body>
+    <div id="app">
+      <section class="header">
+        <h1 class="title center ma-3">Cursos de Django</h1>
+      </section>
+      {% block hero %}
+      <section class="banner mb-2">
+        <header>
+          <h2 class="title">Investir em conhecimento tem os melhores juros</h2>
+        </header>
+      </section>
+      {% endblock hero %} {% block conteúdo %}
+      <section class="conteúdo">
+        <h2>Cursos</h2>
+      </section>
+      {% endblock conteudo%}
+    </div>
+  </body>
+</html>
