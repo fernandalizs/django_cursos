@@ -1,12 +1,6 @@
 asgiref==3.5.2
-# backports.zoneinfo==0.2.1
+backports.zoneinfo==0.2.1
 Django==4.0.5
-sqlparse==0.4.2
-tzadata==2022.1
-
-#DATA BASE
-psycopg2==2.9.3
-
-# Deploy Prod
+django-debug-toolbar==3.5.0
 python-dotenv==0.20.0
-uWSGI==2.0.20
+sqlparse==0.4.2
