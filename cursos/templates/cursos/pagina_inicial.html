@@ -1,0 +1,15 @@
+{% extends 'cursos/index.html' %} {% block conteudo %}
+<section class="course-list center">
+  <p>User: {{ user }}</p>
+  <p>User: {{ user.first_name }}</p>
+  <p>Cursos: {{ cursos }}</p>
+  <p>request: {{ request }}</p>
+
+  <p>
+    <a href="{% url 'cursos.listar.tudo' %}">Ver cursos</a>
+  </p>
+  <p>
+    <a href="">Login</a>
+  </p>
+</section>
+{% endblock conteudo %}

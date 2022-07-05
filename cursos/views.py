@@ -1,7 +1,10 @@
 from django.shortcuts import render
 
 def pagina_inicial(request):
-    return render(request, "/cursos/pagina_inicial.html")
+    context = {
+        "cursos": []
+    }
+    return render(request, "/cursos/pagina_inicial.html", context)
 
 def listar_cursos(request):
-    return render(request, 'cursos/cursos.html')
+    return render(request, 'cursos/listar_cursos.html')
