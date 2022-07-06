@@ -19,8 +19,8 @@ from . import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cursos/', include('cursos.urls'))
+    path('cursos/', include('cursos.urls')),
 ]
 
 if settings.DEBUG:
-    urilpaterns = [path('__debug__/', include('debug_toolbar.urls'))] + urlpatterns
+    urlpatterns = [path('__debug__/', include('debug_toolbar.urls'))] + urlpatterns
